@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO WALLPAPER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/694309cb00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="whole-wrapper">
+        <div class="user-wrapper">
+          <button id="user"><i class="fa-solid fa-user"></i></button>
+          <p class="user-info">로그인 하세요</p>
+        </div>
+        <div class="todo-wrapper">
+          <h1>TO-DO LIST</h1>
+          <form>
+            <input type="text" class="text-box" id="text-box" placeholder="&#10148; 여기에 할일을 적어보세요." autocomplete="off">
+            <button type="submit" id="submit">저장</button>
+          </form>
+          <ul class="todo-list"></ul>  
+        </div>
+        <div class="login-window">
+          <h2>로그인</h2>
+          <form action="#" name="login">
+           <div class="idpw">
+             <label for="id">아이디</label>
+             <input type="text" id="id" autocomplete="off">
+             <label for="pw">비밀번호</label>
+             <input type="password" id="pw">
+           </div>
+           <div class="btns">
+             <button id="login">로그인</button>
+             <button id="join">회원가입</button>
+           </div>
+           <p class="alert"></p>
+          </form>
+       </div>
+        <div class="background-functions">
+          <button id="autoChangeBg"><i class="fa-solid fa-circle-play"></i></button>
+          <button id="thumbnails"><i class="fa-solid fa-image"></i></button>
+          <button id="changeBackground"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div class="thumbnail-window">
+          <div class="thumbnail-inputs">
+            <form action="#">
+              <input id="image-path" placeholder="여기에 이미지 주소를 입력하세요." autocomplete="off">
+              <button type="submit" id="thumbnail-add">추가</button>
+            </form>
+          </div>
+          <div class="thumbnail-list-wrapper">
+            <ul class="thumbnail-list"></ul>
+          </div>
+        </div>
+        <div class="time"></div>
+        <div class="join-window">
+           <form action="#">
+             <fieldset>
+             <legend>회원가입</legend>
+             <label for="join-id">아이디</label>
+             <input type="text" id="join-id"><br>
+             <label for="join-pw">비밀번호</label>
+             <input type="text" id="join-pw"><br>
+             <label for="join-name">이름</label>
+             <input type="text" id="join-name"><br>
+             </fieldset>
+           </form>
+         </div>
+      </div>
+</body>
+<script src="main.js"></script>
+</html>
